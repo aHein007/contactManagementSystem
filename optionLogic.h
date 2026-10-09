@@ -2,6 +2,7 @@
 #ifndef CONTACT_C
 #define CONTACT_C
 #include "addContact.h"
+#include "displayContact.h"
 
 
 int option(int number){
@@ -17,7 +18,7 @@ int option(int number){
             printf("search Contact");
         break;
         case 4:
-            printf("display all contact");
+            displayContact();
         break;
         case 5:
             printf("Exit contact");

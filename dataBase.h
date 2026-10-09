@@ -1,11 +1,11 @@
-#ifndef CONTACT_D
-#define CONTACT_D
+#ifndef DATA_BASE
+#define DATA_BASE
 #define DATA 100
 
 struct contactInfo
 {
     char name[50];
-    int phone;
+    char phone[50];
 };
 
 struct contactInfo db[DATA];

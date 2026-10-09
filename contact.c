@@ -3,6 +3,9 @@
 #include "dataBase.h"
 #include "addContact.h"
 #include "dataBase.h"
+#include <string.h>
+#include <stdlib.h>
+#include "displayContact.h"
 
 int option(int choiceNumber);
 
