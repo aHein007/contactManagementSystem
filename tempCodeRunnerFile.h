@@ -1,0 +1,1 @@
+   if(db[delete_index].name != user_search){// not 

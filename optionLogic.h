@@ -4,6 +4,7 @@
 #include "addContact.h"
 #include "displayContact.h"
 #include "searchContact.h"
+#include "deleteContact.h"
 
 
 int option(int number){
@@ -13,7 +14,7 @@ int option(int number){
             addContact();
         break;
         case 2:
-            printf("delete Contact");
+            deleteContact();
         break;
         case 3:
             searchContact();

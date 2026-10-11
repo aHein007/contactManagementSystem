@@ -13,6 +13,7 @@ int addContact(){
 
     char name[50];
     char phone[50];
+     int db_counter =0;
 
     printf("Please Enter Contact Name:");
     scanf("%s",name);
@@ -23,14 +24,9 @@ int addContact(){
     if(fptr == NULL){
         printf("Your txt file have error");
     }else{
-      fprintf(fptr,"%s %s\n",name,phone);
-
-      int db_counter =0;
-      strcpy(db[db_counter].name,name);
-      strcpy(db[db_counter].phone,phone);
-      db_counter++;
-
-      printf("Your Contact added successfully!");
+    fprintf(fptr,"%s %s\n",name,phone);
+    printf("Your Contact added successfully!\n");
+        //show for contact list 
       fclose(fptr);
     }
 
