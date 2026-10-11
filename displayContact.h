@@ -13,8 +13,8 @@ int displayContact(){
    }else{
     printf("\n#####Contact List#####\n");
      while(fscanf(fptr,"%s %s\n", name,phone) != EOF){
-        contactFound =1;
         printf("Name:%s Phone:%s\n",name,phone);
+        contactFound =1;
     }
 
     if(contactFound == 0)
