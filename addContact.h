@@ -26,8 +26,24 @@ int addContact(){
     }else{
     fprintf(fptr,"%s %s\n",name,phone);
     printf("Your Contact added successfully!\n");
-        //show for contact list 
-      fclose(fptr);
+       
+   
+      //show for contact list
+    int  i =0;
+    FILE *fptr1 = fopen("contact.txt","r");
+     printf("#####Add Contact List#####\n");
+
+    while(fscanf(fptr1,"%s %s",name,phone ) != EOF){
+        strcpy(db[i].name,name);
+        strcpy(db[i].phone,phone);
+
+        printf("Name:%s Phone:%s\n",db[i].name,db[i].phone);
+         i++;
+    }
+
+   
+     fclose(fptr);
+  
     }
 
 
